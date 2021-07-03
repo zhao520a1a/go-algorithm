@@ -55,7 +55,7 @@ func findRepeatnumber2(nums []int) int {
 #### 解法三
 题目说明尚未被充分使用，即 在一个长度为 n 的数组 nums 里的所有数字都在 0 ~ n-1 的范围内。 
 此说明含义：`数组元素的 索引 和 值 是 一对多 的关系。因此，可遍历数组并通过交换操作，使元素的 索引 与 值一一对应（即 nums[i] = i ）。` 
-![03 DuplicationInArray](./1.png)
+![03 DuplicationInArray](1.png)
 
 
 ##### 算法流程：
