@@ -1,13 +1,18 @@
-## 交替打印数字和字母
+## 10000以内的所有质数的输出
 
 **问题描述**
 
-使用两个 `goroutine` 交替打印序列，一个 `goroutine` 打印数字， 另外一个 `goroutine` 打印字母， 最终效果如下：
-
-```bash
-12AB34CD56EF78GH910IJ1112KL1314MN1516OP1718QR1920ST2122UV2324WX2526YZ2728
-```
 
 **解题思路**
 
-问题很简单，使用 channel 来控制打印的进度。使用两个 channel ，来分别控制数字和字母的打印序列， 数字打印完成后通过 channel 通知字母打印, 字母打印完成后通知数字打印，然后周而复始的工作。
+https://zhuanlan.zhihu.com/p/363811026
+
+https://blog.csdn.net/qq_33935895/article/details/103060261
+
+https://www.cnblogs.com/reddest/p/9803268.html
+
+
+1. 数据库事物的特性
+2. 两个库里的两个表，A 表中某条数据增加 n，B 表中某条数据减少 n，怎么来做这件事
+3. 算法：10000以内的素数和
+4. 问项目相关
