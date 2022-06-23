@@ -38,7 +38,3 @@ func heapify(arr []int, i, arrLen int) {
 		heapify(arr, largest, arrLen)
 	}
 }
-
-func swap(arr []int, i, j int) {
-	arr[i], arr[j] = arr[j], arr[i]
-}
