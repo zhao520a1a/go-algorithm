@@ -26,6 +26,8 @@ func TestQuickSort(t *testing.T) {
 	intSlice := []int{2, 1, 5, 3, 6, 4}
 	comparator := &intComparator{}
 	algorithm.QuickSort(intSlice, 0, len(intSlice)-1, comparator)
+	fmt.Println(intSlice)
 
-	fmt.Println(intSlice) // []int{1, 2, 3, 4, 5, 6}
+	QuickSort(intSlice, 0, len(intSlice)-1, comparator)
+	fmt.Println(intSlice)
 }
