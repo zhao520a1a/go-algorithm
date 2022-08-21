@@ -6,5 +6,16 @@
 
 ![Image](images/banner.png)
 
+
+## 其他
+
+### 文档格式化
+
+```
+npm run format
+```
+
+引用：https://prettier.io/docs/en/install.html
+
 ### 参考项目
 [duke-git/lancet](https://github.com/duke-git/lancet/blob/main/docs/algorithm_zh-CN.md)

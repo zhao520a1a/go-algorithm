@@ -15,7 +15,7 @@ func primeNumSum1(n int) int {
 	return sum
 }
 
-// 使用埃筛选法求质数,时间复杂度O(n log log n) 接近于 O(n)
+// 使用"埃氏筛"求质数,时间复杂度O(n log log n) 接近于 O(n)
 func primeNumSum2(n int) int {
 	isPrimeList := make([]bool, n)
 	sum := 0

@@ -1,0 +1,19 @@
+{
+  "name": "go-algorithm",
+  "version": "1.0.0",
+  "description": "![Image](https://img.shields.io/badge/language-muti-brightgreen.svg) ![Image](https://img.shields.io/badge/leetcode-50%2B-orange.svg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \".\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@golden.github.com:zhao520a1a/go-algorithm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "2.3.2"
+  }
+}
