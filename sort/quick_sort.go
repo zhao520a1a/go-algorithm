@@ -19,15 +19,18 @@ func QuickSort[T any](slice []T, lowIndex, highIndex int, comparator Comparator)
 
 // partition split slice into two parts
 func partition[T any](slice []T, lowIndex, highIndex int, comparator Comparator) int {
-	p := slice[highIndex]
+	marker := slice[highIndex]
+
+	// 1. 比大小后，找到 marker 坐在的坐标
 	i := lowIndex
 	for j := lowIndex; j < highIndex; j++ {
-		if comparator.Compare(slice[j], p) == -1 { // slice[j] < p
-			swap(slice, i, j)
+		if comparator.Compare(slice[j], marker) == -1 { // slice[j] < p
+			swap(slice, i, j) // 令坐标 i 之前的值都比 maker 小， 坐标 i 之后的值都比 maker 大
 			i++
 		}
 	}
 
+	// 2. 将坐标i上的值更新为value
 	swap(slice, i, highIndex)
 
 	return i
