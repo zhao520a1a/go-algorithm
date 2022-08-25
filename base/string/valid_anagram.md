@@ -2,7 +2,6 @@
 
 [LeetCode 第 242 题](https://leetcode-cn.com/problems/valid-anagram/)：给定两个字符串 s 和 t，编写一个函数来判断 t 是否是 s 的字母异位词。
 
-
 说明：你可以假设字符串只包含小写字母。
 
 ```
