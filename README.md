@@ -13,7 +13,6 @@
 
 
 # 二叉树
-二叉树这种结构无非就是二叉链表
 
 ## 观点认知
 
@@ -24,7 +23,39 @@
 - 中序位置的代码在一个二叉树节点左子树都遍历完，即将开始遍历右子树的时候执行。
 
 <img src="https://github.com/zhao520a1a/go-algorithm/assets/18511674/66cfa393-c6f8-44b3-8eb5-e16b97609835" alt="前中后序" style="zoom:50%;" />
- 
+
+二叉树遍历框架:
+``` go
+// 基本的二叉树节点
+type TreeNode struct {
+    val int
+    left *TreeNode
+    right *TreeNode
+}
+func traverse(root *TreeNode) {
+    if root == nil {
+    		return
+    }
+    // 前序位置
+    traverse(root.left)
+    // 中序位置
+    traverse(root.right)
+    // 后序位置
+}
+```
+
+#### 二叉树这种结构无非就是二叉链表
+```
+// 递归遍历单链表
+func traverse(head *ListNode) {
+    if head == nil {
+        return
+    }
+    // 前序位置
+    traverse(head.Next)
+    // 后序位置
+}
+```
 #### 快速排序就是个二叉树的前序遍历，归并排序就是个二叉树的后序遍历
 ``` go
 // 快速排序
@@ -54,10 +85,15 @@ func sort(nums []int, lo int, hi int) {
 }
 ```
 
+
+## 解题思路
+二叉树的所有问题，就是让你在前中后序位置注入巧妙的代码逻辑，去达到自己的目的，你只需要单独思考每一个节点应该做什么，其他的不用你管，抛给二叉树遍历框架，递归会在所有节点上做相同的操作。
+
 ## 两种解题思路
 二叉树题目的递归解法可以分两类思路:
-第一类是遍历一遍二叉树得出答案， -> 回溯算法核心框架 
-第二类是通过分解问题计算出答案， -> 动态规划核心框架。
+第一类是遍历一遍二叉树得出答案 -> 回溯算法核心框架
+
+第二类是通过分解问题计算出答案 -> 动态规划核心框架
 
 
 
